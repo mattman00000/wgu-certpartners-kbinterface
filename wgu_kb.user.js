@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WGU education2 certification partners test keyboard interface
 // @namespace    http://www.mattman00000.com
-// @version      0.0.1
+// @version      0.0.2
 // @description  adds keyboard interface for practice tests e.g. C479 web technologies "course mastery"
 // @author       mattman00000
 // @match        https://education2.certification-partners.com/TestTake/testEntryPoint/*
@@ -19,6 +19,6 @@ window.onkeyup = function(e) {
     }else if (key == 52) {
         document.forms[0].getElementsByClassName("mcInput")[3].click();
     }else if (key == 32) {
-        document.forms[0].submit();
+        document.getElementById("nextQuestionButton").click();
     }
 }
