@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WGU education2 certification partners test keyboard interface
 // @namespace    http://www.mattman00000.com
-// @version      0.1.5
+// @version      0.1.6
 // @description  adds keyboard interface for practice tests e.g. C479 web technologies "course mastery"
 // @author       mattman00000
 // @match        https://education2.certification-partners.com/*
@@ -60,7 +60,7 @@ if (window.location.href.substring(0,window.location.href.lastIndexOf("/"))==
         }else if (key == 82) {
             console.debug("R key press");
             if (document.getElementById("question_responses")!=null) {
-                document.info("cycler value is "+cycler);
+                console.info("cycler value is "+cycler);
                 if (cycler == 0) {
                     document.getElementById("question_responses").style.display = "block";
                     for (var i = 0; i<document.getElementsByClassName("correctContainer").length; i++) {
