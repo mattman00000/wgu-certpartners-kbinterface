@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WGU education2 certification partners test keyboard interface
 // @namespace    http://www.mattman00000.com
-// @version      0.1.4
+// @version      0.1.5
 // @description  adds keyboard interface for practice tests e.g. C479 web technologies "course mastery"
 // @author       mattman00000
 // @match        https://education2.certification-partners.com/*
@@ -45,6 +45,12 @@ if (window.location.href.substring(0,window.location.href.lastIndexOf("/"))==
                     console.warn("Test Failure Condition");
                     localStorage.wguhref = window.location.href;
                     localStorage.wgufail = "true";
+                    console.info("localStorage.wguhref is "+localStorage.wguhref);
+                    console.info("localStorage.wgufail is "+localStorage.wgufail);
+                } else if (document.getElementById("te-FinalGrade").innerText=="Knowledgeable") {
+                    console.warn("Test Success Condition");
+                    localStorage.wguhref = window.location.href;
+                    localStorage.wgufail = "false";
                     console.info("localStorage.wguhref is "+localStorage.wguhref);
                     console.info("localStorage.wgufail is "+localStorage.wgufail);
                 }
