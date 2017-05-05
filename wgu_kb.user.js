@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name               WGU education2 certification partners test keyboard interface
 // @namespace          http://www.mattman00000.com
-// @version            0.1.9.2
+// @version            0.1.9.3
 // @description        adds keyboard interface for practice tests e.g. C479 web technologies "course mastery"
 // @author             mattman00000
 // @match              https://education2.certification-partners.com/*
@@ -10,8 +10,8 @@
 // @connect            github.com/mattman00000
 // @connect            self
 // @connect            *
-// @downloadURL        https://github.com/mattman00000/wgu-certpartners-kbinterface/raw/master/flfusker_helper.user.js
-// @updateURL          https://github.com/mattman00000/wgu-certpartners-kbinterface/raw/master/flfusker_helper.user.js
+// @downloadURL        https://github.com/mattman00000/wgu-certpartners-kbinterface/raw/master/wgu_kb.user.js
+// @updateURL          https://github.com/mattman00000/wgu-certpartners-kbinterface/raw/master/wgu_kb.user.js
 // @supportURL         https://github.com/mattman00000/wgu-certpartners-kbinterface/issues
 // @homepageURL        https://github.com/mattman00000/userscripts
 // @contributionURL    https://github.com/mattman00000/userscripts
